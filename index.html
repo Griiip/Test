@@ -1,18 +1,144 @@
-
-
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<link href="css/carousel.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.0.5/video-js.css" rel="stylesheet">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.0.5/video.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<div class="container">
+<div class="main">
+<div class="header" >
+<h2 class="titleTxt">Race 4 - Tazio Nuvolari <span>15/07/2018</span></h2>
+<span class="logo"><img src="images/logo.png"></span>
+ </div>
+<div class="playercontainer">
 	<div class="row">
+	<div class="col-sm-3">  
+          <div class="activeThumb">
+		  <h2>Main Feed
+            <a class="hide" onclick="playHD(0)">Play</a></h2>
+            <video id="vid0" class="video-js vjs-default-skin" autoplay width="240" height="135" data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'></video>
+          </div>
+            <div class="carousel thin">
+                <a class="prev"><span class="glyphicon glyphicon-chevron-up"></span></a>
+                <div class="window">
+                    <ul class="clr">
+                        <li class="item">
+						  <h2>Miguel Matos
+                          <a  onclick="playHD(1)"><img src="images/man.png" /></a></h2>
+                          <video
+                            id="vid1"
+                            class="video-js vjs-default-skin"
+
+                            autoplay
+                              width="240" height="135"
+                              data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                          >
+                          </video>
+                        </li>
+                        <li class="item" >
+						  <h2>Yarin Stern
+                            <a  onclick="playHD(2)"><img src="images/man.png" /></a></h2>
+                          <video
+                            id="vid2"
+                            class="video-js vjs-default-skin"
+                            controls
+                            autoplay
+                            width="240" height="135"
+                              data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                          >
+                          </video>
+                        </li>
+                        <li class="item">
+						  <h2>Davide Dallara
+                            <a onclick="playHD(3)"><img src="images/man.png" /></a></h2>
+                          <video
+                            id="vid3"
+                            class="video-js vjs-default-skin"
+                            controls
+                            autoplay
+                            width="240" height="135"
+                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                          >
+                          </video>
+                        </li>
+                        <li class="item" >
+						  <h2>Miguel Matos
+                            <a  onclick="playHD(4)"><img src="images/man.png" /></a></h2>
+                          <video
+                            id="vid4"
+                            class="video-js vjs-default-skin"
+                            controls
+                            autoplay
+                            width="240" height="135"
+                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                          >
+                          </video>
+                        </li>
+                        <li class="item">
+						  <h2>Yarin Stern
+                              <a  onclick="playHD(5)"><img src="images/man.png" /></a></h2>
+                          <video
+                            id="vid5"
+                            class="video-js vjs-default-skin"
+                            controls
+                            autoplay
+                          width="240" height="135"
+                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                          >
+                          </video>
+                        </li>
+                        <li class="item">
+						  <h2>Davide Dallara
+                            <a  onclick="playHD(6)"><img src="images/man.png" /></a></h2>
+                          <video
+                            id="vid6"
+                            class="video-js vjs-default-skin"
+                            controls
+                            autoplay
+                            width="240" height="135"
+                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                          >
+                          </video>
+                        </li>
+                         <li class="item">
+						   <h2>Miguel Matos
+                             <a onclick="playHD(7)"><img src="images/man.png" /></a></h2>
+                           <video
+                             id="vid7"
+                             class="video-js vjs-default-skin"
+                             controls
+                             autoplay
+                              width="240" height="135"
+                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                           >
+                           </video>
+                        </li>
+                        <li class="item">
+						  <h2>Yarin Stern
+                            <a onclick="playHD(8)"><img src="images/man.png" /></a></h2>
+                          <video
+                            id="vid8"
+                            class="video-js vjs-default-skin"
+                            controls
+                            autoplay
+                          width="240" height="135"
+                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                          >
+                          </video>
+                        </li>
+                    </ul>
+                </div>
+                <a class="next"><span class="glyphicon glyphicon-chevron-down"></span></a>
+            </div>
+        
+</div>
+	<div class="col-sm-9">
     <div class="slider">
         <div>
           <video
@@ -42,7 +168,7 @@
             class="video-js vjs-default-skin"
 
             autoplay
-            width="1280" height="720"
+                    width="1280" height="720"
                       data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
           >
           </video>
@@ -53,7 +179,7 @@
             class="video-js vjs-default-skin"
 
             autoplay
-            width="1280" height="720"
+                    width="1280" height="720"
                       data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
           >
           </video>
@@ -64,7 +190,7 @@
             class="video-js vjs-default-skin"
 
             autoplay
-            width="1280" height="720"
+                    width="1280" height="720"
                       data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
           >
           </video>
@@ -75,7 +201,7 @@
             class="video-js vjs-default-skin"
 
             autoplay
-            width="1280" height="720"
+                    width="1280" height="720"
                       data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
           >
           </video>
@@ -86,7 +212,7 @@
             class="video-js vjs-default-skin"
 
             autoplay
-                width="1280" height="720"
+                    width="1280" height="720"
             data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
           >
           </video>
@@ -97,7 +223,7 @@
             class="video-js vjs-default-skin"
 
             autoplay
-                width="1280" height="720"
+                    width="1280" height="720"
             data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
           >
           </video>
@@ -108,7 +234,7 @@
             class="video-js vjs-default-skin"
 
             autoplay
-                width="1280" height="720"
+                    width="1280" height="720"
         data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
           >
           </video>
@@ -117,130 +243,10 @@
           Miss
         </div>
       </div>
-        <div >
-          <div>
-              <a  onclick="playHD(0)">Play</a>
-            <video
-              id="vid0"
-              class="video-js vjs-default-skin"
-
-              autoplay
-              width="240" height="135"
-                data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-            >
-            </video>
-          </div>
-            <div class="carousel thin" style="height: 480px;">
-                <a class="prev"><span class="glyphicon glyphicon-chevron-up"></span></a>
-                <div class="window">
-                    <ul class="clr">
-                        <li class="item">
-                          <a  onclick="playHD(1)">Play</a>
-                          <video
-                            id="vid1"
-                            class="video-js vjs-default-skin"
-
-                            autoplay
-                              width="240" height="135"
-                              data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-                          >
-                          </video>
-                        </li>
-                        <li class="item" >
-                            <a  onclick="playHD(2)">Play</a>
-                          <video
-                            id="vid2"
-                            class="video-js vjs-default-skin"
-                            controls
-                            autoplay
-                            width="240" height="135"
-                              data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-                          >
-                          </video>
-                        </li>
-                        <li class="item">
-                            <a onclick="playHD(3)">Play</a>
-                          <video
-                            id="vid3"
-                            class="video-js vjs-default-skin"
-                            controls
-                            autoplay
-                            width="240" height="135"
-                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-                          >
-                          </video>
-                        </li>
-
-                        <li class="item" >
-                            <a  onclick="playHD(4)">Play</a>
-                          <video
-                            id="vid4"
-                            class="video-js vjs-default-skin"
-                            controls
-                            autoplay
-                            width="240" height="135"
-                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-                          >
-                          </video>
-                        </li>
-
-                        <li class="item">
-                              <a  onclick="playHD(5)">Play</a>
-                          <video
-                            id="vid5"
-                            class="video-js vjs-default-skin"
-                            controls
-                            autoplay
-                          width="240" height="135"
-                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-                          >
-                          </video>
-                        </li>
-                        <li class="item">
-                            <a  onclick="playHD(6)">Play</a>
-                          <video
-                            id="vid6"
-                            class="video-js vjs-default-skin"
-                            controls
-                            autoplay
-                            width="240" height="135"
-                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-                          >
-                          </video>
-                        </li>
-                         <li class="item">
-                             <a onclick="playHD(7)">Play</a>
-                           <video
-                             id="vid7"
-                             class="video-js vjs-default-skin"
-                             controls
-                             autoplay
-                              width="240" height="135"
-                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-                           >
-                           </video>
-                        </li>
-                        <li class="item">
-                            <a onclick="playHD(8)">Play</a>
-                          <video
-                            id="vid8"
-                            class="video-js vjs-default-skin"
-                            controls
-                            autoplay
-                          width="240" height="135"
-                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-                          >
-                          </video>
-                        </li>
-
-
-                    </ul>
-                </div>
-                <a class="next"><span class="glyphicon glyphicon-chevron-down"></span></a>
-            </div>
-        </div>
-
+	  </div>
+	  
     </div>
+</div>
 </div>
 <script>
 
