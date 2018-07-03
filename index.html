@@ -1,144 +1,127 @@
 <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<link href="css/main.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.0.5/video-js.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<link href="css/main.css" rel="stylesheet">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
 <script src="js/carousel.js"></script>
 <script src="js/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.0.5/video.js"></script>
+<script src="js/video.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+
 <div class="main">
 <div class="header" >
-<h2 class="titleTxt">Race 4 - Tazio Nuvolari <span>15/07/2018</span></h2>
+<h2 class="titleTxt" id="title">Main Feed <span></span></h2>
 <span class="logo"><img src="images/logo.png"></span>
  </div>
 <div class="playercontainer">
 	<div class="row">
-	<div class="col-sm-3">  
-          <div class="activeThumb">
+	<div class="col-sm-3">
+          <div class="item0 activeThumb">
 		  <h2>Main Feed
-            <a class="hide" onclick="playHD(0)">Play</a></h2>
-            <video id="vid0" class="video-js vjs-default-skin" autoplay width="240" height="135" data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'></video>
+          </h2>
+            <video id="vid0"     onclick="playHD(0)" class="video-js vjs-default-skin vim-css" autoplay controls width="240" height="135" data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_small/Main_Feed_LowRes.mp4"}] }'></video>
           </div>
             <div class="carousel thin">
                 <a class="prev"><span class="glyphicon glyphicon-chevron-up"></span></a>
                 <div class="window">
                     <ul class="clr">
-                        <li class="item">
-						  <h2>Miguel Matos
+                        <li class="item1">
+						  <h2>Morosan
                           <a  onclick="playHD(1)"><img src="images/man.png" /></a></h2>
                           <video
                             id="vid1"
+                            onclick="playHD(1)"
                             class="video-js vjs-default-skin"
-
+                            controls
                             autoplay
                               width="240" height="135"
-                              data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                              data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_small/Car06_Morosan_LowRes.mp4"}] }'
                           >
                           </video>
                         </li>
-                        <li class="item" >
-						  <h2>Yarin Stern
+                        <li class="item2" >
+						  <h2>Dallara
                             <a  onclick="playHD(2)"><img src="images/man.png" /></a></h2>
                           <video
+                          onclick="playHD(2)"
                             id="vid2"
                             class="video-js vjs-default-skin"
                             controls
                             autoplay
                             width="240" height="135"
-                              data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                              data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_small/Car8_Dallara_LowRes.mp4"}] }'
                           >
                           </video>
                         </li>
-                        <li class="item">
-						  <h2>Davide Dallara
+                        <li class="item3">
+						  <h2>Matos
                             <a onclick="playHD(3)"><img src="images/man.png" /></a></h2>
                           <video
+                          onclick="playHD(3)"
                             id="vid3"
                             class="video-js vjs-default-skin"
                             controls
                             autoplay
                             width="240" height="135"
-                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_small/Car18_Matos_LowRes.mp4"}] }'
                           >
                           </video>
                         </li>
-                        <li class="item" >
-						  <h2>Miguel Matos
+                        <li class="item4" >
+						  <h2>Vettori
                             <a  onclick="playHD(4)"><img src="images/man.png" /></a></h2>
                           <video
                             id="vid4"
+                            onclick="playHD(4)"
                             class="video-js vjs-default-skin"
                             controls
                             autoplay
                             width="240" height="135"
-                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_small/Car47_Vettori_LowRes.mp4"}] }'
                           >
                           </video>
                         </li>
-                        <li class="item">
-						  <h2>Yarin Stern
+                        <li class="item5">
+						  <h2>Spagni
                               <a  onclick="playHD(5)"><img src="images/man.png" /></a></h2>
                           <video
                             id="vid5"
+                            onclick="playHD(5)"
                             class="video-js vjs-default-skin"
                             controls
                             autoplay
                           width="240" height="135"
-                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_small/Car67_Spagni_LowRes.mp4"}] }'
                           >
                           </video>
                         </li>
-                        <li class="item">
-						  <h2>Davide Dallara
+                        <li class="item6">
+						  <h2>Liotti
                             <a  onclick="playHD(6)"><img src="images/man.png" /></a></h2>
                           <video
                             id="vid6"
+                            onclick="playHD(6)"
                             class="video-js vjs-default-skin"
                             controls
                             autoplay
                             width="240" height="135"
-                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_small/Car69_Liotti_LowRes.mp4"}] }'
                           >
                           </video>
                         </li>
-                         <li class="item">
-						   <h2>Miguel Matos
-                             <a onclick="playHD(7)"><img src="images/man.png" /></a></h2>
-                           <video
-                             id="vid7"
-                             class="video-js vjs-default-skin"
-                             controls
-                             autoplay
-                              width="240" height="135"
-                          data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-                           >
-                           </video>
-                        </li>
-                        <li class="item">
-						  <h2>Yarin Stern
-                            <a onclick="playHD(8)"><img src="images/man.png" /></a></h2>
-                          <video
-                            id="vid8"
-                            class="video-js vjs-default-skin"
-                            controls
-                            autoplay
-                          width="240" height="135"
-                            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-                          >
-                          </video>
-                        </li>
+
                     </ul>
                 </div>
                 <a class="next"><span class="glyphicon glyphicon-chevron-down"></span></a>
             </div>
-        
+
 </div>
 	<div class="col-sm-9">
+
     <div class="slider">
         <div>
           <video
@@ -146,8 +129,10 @@
             class="video-js vjs-default-skin"
             controls
             autoplay
-                    width="1280" height="720"
-            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+            preload="auto"
+            data-setup='{   "controlBar": {
+    "fullscreenToggle" : false
+  } ,"muted" : false,  "sources": [{ "type": "video/mp4", "src": "videos_big/Main_Feed.mp4"}] }'
           >
           </video>
         </div>
@@ -156,9 +141,12 @@
             id="b1"
             class="video-js vjs-default-skin"
             controls
+                  preload="auto"
             autoplay
                     width="1280" height="720"
-            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+            data-setup='{  "controlBar": {
+    "fullscreenToggle" : false
+  } ,"muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_big/Car06_Morosan.mp4"}] }'
           >
           </video>
         </div>
@@ -166,10 +154,13 @@
           <video
             id="b2"
             class="video-js vjs-default-skin"
-
+controls
+      preload="auto"
             autoplay
                     width="1280" height="720"
-                      data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                      data-setup='{  "controlBar": {
+              "fullscreenToggle" : false
+            } ,"muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_big/Car08_Dallara.mp4"}] }'
           >
           </video>
         </div>
@@ -177,10 +168,13 @@
           <video
             id="b3"
             class="video-js vjs-default-skin"
-
+controls
+      preload="auto"
             autoplay
                     width="1280" height="720"
-                      data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                      data-setup='{  "controlBar": {
+              "fullscreenToggle" : false
+            } ,"muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_big/Car18_Matos.mp4"}] }'
           >
           </video>
         </div>
@@ -188,10 +182,13 @@
           <video
             id="b4"
             class="video-js vjs-default-skin"
-
+controls
+      preload="auto"
             autoplay
                     width="1280" height="720"
-                      data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                      data-setup='{ "controlBar": {
+              "fullscreenToggle" : false
+            } , "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_big/Car47_Vettori.mp4"}] }'
           >
           </video>
         </div>
@@ -199,10 +196,13 @@
           <video
             id="b5"
             class="video-js vjs-default-skin"
-
+controls
+      preload="auto"
             autoplay
                     width="1280" height="720"
-                      data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+                      data-setup='{ "controlBar": {
+              "fullscreenToggle" : false
+            } , "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_big/Car67_Spagni.mp4"}] }'
           >
           </video>
         </div>
@@ -210,41 +210,23 @@
           <video
             id="b6"
             class="video-js vjs-default-skin"
-
+controls
+      preload="auto"
             autoplay
                     width="1280" height="720"
-            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
+            data-setup='{  "controlBar": {
+    "fullscreenToggle" : false
+  } ,"muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos_big/Car69_Liotti.mp4"}] }'
           >
           </video>
         </div>
-        <div>
-          <video
-            id="b7"
-            class="video-js vjs-default-skin"
 
-            autoplay
-                    width="1280" height="720"
-            data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-          >
-          </video>
-        </div>
-        <div>
-          <video
-            id="b8"
-            class="video-js vjs-default-skin"
-
-            autoplay
-                    width="1280" height="720"
-        data-setup='{ "muted" : true,  "sources": [{ "type": "video/mp4", "src": "videos/HarryTimer1.mov"}] }'
-          >
-          </video>
-        </div>
         <div>
           Miss
         </div>
       </div>
 	  </div>
-	  
+
     </div>
 </div>
 </div>
@@ -253,21 +235,81 @@
 var slider = "";
 var previousIndex = 0;
 
+
+
 function playHD(index) {
+
+  if(index != previousIndex){
+    if(index == 0){
+      $('li').removeClass('activeLi');
+      $('.item0').addClass('activeThumb');
+    }else{
+      $('.item'+index).addClass('activeLi');
+     $('.item0').removeClass('activeThumb');
+     $('.item' + previousIndex).removeClass('activeLi');
+    }
   slider.goToSlide(index);
   var video = videojs("b" + index);
+  var small_video = videojs("vid" + index);
+  switch(index){
+    case 0 :
+      $('#title').text('Main Feed');
+    break;
+    case 1:
+      $('#title').text('Morosan');
+    break;
+    case 2:
+      $('#title').text('Dallara');
+    break;
+    case 3:
+      $('#title').text('Matos');
+    break;
+    case 4:
+      $('#title').text('Vettori');
+    break;
+    case 5:
+      $('#title').text('Spagni');
+    break;
+    case 6:
+      $('#title').text('Liotti');
+    break;
+  }
+
   video.muted(false);
+  video.play();
+small_video.play();
   if(previousIndex >=0 ){
     var previousVideo = videojs("b" + previousIndex);
     previousVideo.muted(true);
+  //  previousVideo.pause();
   }
   previousIndex = index;
 }
 
+}
+
 $(document).ready(function(){
   slider = $('.slider').bxSlider({
-    controls : false, pager : false, speed : 500
-});
+    controls : false, pager : false, speed : 0,touchEnabled :false
+  });
+
+// $('video').each(function () {
+//       var vid = videojs($(this).attr('id'));
+//       vid.play();
+// })
+  $('#title').text('Main Feed');
+  var elem_width = $('.bx-wrapper').width();
+  var elem_height = Math.ceil((elem_width *9) /16)
+
+$("#b0").css({"height": elem_height,"width": elem_width});
+$("#b1").css({"height": elem_height,"width": elem_width});
+$("#b2").css({"height": elem_height,"width": elem_width});
+$("#b3").css({"height": elem_height,"width": elem_width});
+$("#b4").css({"height": elem_height,"width": elem_width});
+$("#b5").css({"height": elem_height,"width": elem_width});
+$("#b6").css({"height": elem_height,"width": elem_width});
+$("#b7").css({"height": elem_height,"width": elem_width});
+$("#b8").css({"height": elem_height,"width": elem_width});
 });
 
 </script>
