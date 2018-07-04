@@ -293,10 +293,11 @@ $(document).ready(function(){
     controls : false, pager : false, speed : 0,touchEnabled :false
   });
 
-// $('video').each(function () {
-//       var vid = videojs($(this).attr('id'));
-//       vid.play();
-// })
+$('video').each(function () {
+      var vid = videojs($(this).attr('id'));
+      vid.play();
+});
+
   $('#title').text('Main Feed');
   var elem_width = $('.bx-wrapper').width();
   var elem_height = Math.ceil((elem_width *9) /16)
